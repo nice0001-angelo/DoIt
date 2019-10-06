@@ -1,19 +1,14 @@
-class calculator:
-    def __init__(self):
-        self.result = 0
+# random.py
+import random
+import sys
 
-    def add(self,num):
-        self.result += num
-        return self.result
+def random_pop(args):
+    number = random.randint(0,len(args)-1) //randint를 이용해서 pop 하고자 하는 자릿수 랜덤 반환
+    return args.pop(number)
 
-
-if __name__ == '__main__':
-    cal1=calculator()
-    cal2=calculator()
-
-    print(cal1.add(3))
-    print(cal1.add(4))
-    print(cal2.add(5))
-    print(cal2.add(6))
-
+if __name__ == "__main__":
+    #args =[1,2,3,4,5]
+    args = sys.argv[1:]
+    while args:
+        print(random_pop(args))
 
