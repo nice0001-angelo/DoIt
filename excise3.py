@@ -1,4 +1,12 @@
 import sys
 
-a=sys.argv[1:]
-s
+def gugu(argv):
+    i = 0
+    result = 0
+    print("%s단입니다\n" % argv)
+    for i in range(1,9):
+        result = argv*i
+        print(result,end=' ')
+
+argv = int(sys.argv[1])
+gugu(argv)
