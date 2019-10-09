@@ -11,3 +11,11 @@ Kim은 반드시 seoul 안에 포함되어 있습니다.
 seoul	    return
 [Jane, Kim]	"김서방은 1에 있다"
 '''
+def solution(seoul):
+    if len(seoul) >=1 and len(seoul) <=1000:
+        x= seoul.index("Kim")
+        answer = print('"김서방은 %d에 있다"' % x)
+        return answer
+
+if __name__ == "__main__":
+    solution(["Jane","Kim"])
