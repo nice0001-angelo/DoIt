@@ -14,8 +14,7 @@ seoul	    return
 def solution(seoul):
     if len(seoul) >=1 and len(seoul) <=1000:
         x= seoul.index("Kim")
-        answer = print('"김서방은 %d에 있다"' % x)
-        return answer
+        return '김서방은 %d에 있다' % x
 
 if __name__ == "__main__":
-    solution(["Jane","Kim"])
+    print(solution(["Jane","Kim","N","bread","KIM","Joy"]))
