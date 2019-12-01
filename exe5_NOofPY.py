@@ -19,3 +19,18 @@ Pyy	false
 입출력 예 #2
 'p'의 개수 1개, 'y'의 개수 2개로 다르므로 false를 return 합니다.
 '''
+
+
+
+def solution(s):
+    s = s.lower()
+    p_cnt = s.count('p')
+    y_cnt = s.count('y')
+
+    if p_cnt == y_cnt:
+        return True
+    else:
+        return False
+
+if __name__ == "__main__":
+    s = 'pPoooyY'
