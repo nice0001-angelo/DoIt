@@ -3,7 +3,7 @@
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
-response =  urlopen('https://www.naver.com/')
+response =  urlopen('hm.daum.net')
 soup = BeautifulSoup(response, 'html.parser')
 i = 1
 f = open("C:/WorkSpace/Python/새파일.txt", 'w')
